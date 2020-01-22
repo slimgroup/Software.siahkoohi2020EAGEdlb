@@ -5,9 +5,9 @@ Codes for generating results in Siahkoohi, A., Rizzuti, G., and Herrmann, F.J., 
 
 ## Prerequisites
 
-This code has been tested on Deep Learning AMI (Amazon Linux 2) Version 26.0 on Amazon Web Services (AWS). The software is tested on `c5.4xlarge` and `g3s.xlarge` instances. Using GPU is not essential since PDE solves dominate the computation. Also, we use GCC compiler version 7.3.1.
+This code has been tested on Deep Learning AMI (Amazon Linux 2) Version 26.0 on Amazon Web Services (AWS), using `c5.4xlarge` and `g3s.xlarge` instances. Using GPU is not essential since PDE solves dominate the computation. Also, we use GCC compiler version 7.3.1.
 
-This software is based on [Devito-3.5](https://github.com/devitocodes/devito/releases/tag/v3.5) and [PyTorch-1.4.0](https://github.com/pytorch/pytorch/releases/tag/v1.3.1). Additionally, we borrow `JAcoustic_codegen.py`\, `PyModel.py`\, `PySource.py`\, `utils.py`\, and `checkpoint.py` from [JUDI](https://github.com/slimgroup/JUDI.jl), a framework for large-scale seismic modeling and inversion that abstracts forward/adjoint nonlinear and Born modeling Devito operators.
+This software is based on [Devito-3.5](https://github.com/devitocodes/devito/releases/tag/v3.5) and [PyTorch-1.4.0](https://github.com/pytorch/pytorch/releases/tag/v1.4.0). Additionally, we borrow `JAcoustic_codegen.py`\, `PyModel.py`\, `PySource.py`\, `utils.py`\, and `checkpoint.py` from [JUDI](https://github.com/slimgroup/JUDI.jl), a framework for large-scale seismic modeling and inversion that abstracts forward/adjoint nonlinear and Born modeling Devito operators.
 
 Follow the steps below to install the necessary libraries:
 
@@ -33,7 +33,7 @@ pip install tensorboardX
 
 ## Dataset
 
-The 2D Overthrust velocity model we use is obtained from [JUDI](https://github.com/slimgroup/JUDI.jl)'s GitHub repository and will be automatically downloaded and placed at `vel_dir/` directory upon running `run-training.sh`. See below for more details.
+The 2D Overthrust velocity model we use is obtained from [JUDI](https://github.com/slimgroup/JUDI.jl)'s GitHub repository and will be automatically downloaded and placed at `vel_dir/` directory upon running `run-training.sh`. See below for more details. The observed data will be also downloaded into `vel_dir/data/` upon starting the inversion. See below for more details.
 
 ## Script descriptions
 
