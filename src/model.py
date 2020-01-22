@@ -74,8 +74,7 @@ class LearnedImaging(object):
 
         self.l2_loss = torch.nn.MSELoss().to(self.device)
         self.optim = pSGLD([{'params': self.G.parameters()}], 
-            float(args.lr), 
-            weight_decay=args.weight_decay*np.prod(self.y.shape)/(args.eta))
+            float(args.lr), weight_decay=args.weight_decay**2)
 
     def train(self, args):
 

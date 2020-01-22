@@ -12,5 +12,5 @@ if [ ! -f $vel_dir/overthrust_model.h5 ]; then
 		-O $vel_dir/overthrust_model.h5
 fi
 
-python $path_script/main.py --epoch 10000 --eta 2.3177 --lr 0.001 --experiment $experiment_name \
---weight_decay 0.0005 --linear 0 --cuda 0 --save_freq 50 --sample_freq 50 --vel_dir $vel_dir
+python $path_script/main.py --epoch 10000 --eta 2.0 --lr 0.001 --experiment $experiment_name \
+--weight_decay 170.0 --cuda 0 --save_freq 50 --sample_freq 50 --vel_dir $vel_dir
