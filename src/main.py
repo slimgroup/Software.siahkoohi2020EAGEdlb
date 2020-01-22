@@ -13,7 +13,7 @@ parser.add_argument('--epoch', dest='epoch', type=int, default=1001, help='# of 
 parser.add_argument('--eta', dest='eta', type=float, default=0.1, help='noise_amp')
 parser.add_argument('--lr', dest='lr', type=float, default=0.001, help='initial learning rate for adam')
 parser.add_argument('--weight_decay', dest='weight_decay', type=float, default=0., help='weight_decay')
-parser.add_argument('--phase', dest='phase', default='train', help='train, test')
+parser.add_argument('--phase', dest='phase', default='train', help='train, test, prior')
 parser.add_argument('--save_freq', dest='save_freq', type=int, default=100, help='save a model every save_freq iterations')
 parser.add_argument('--sample_freq', dest='sample_freq', type=int, default=1, help='sample_freq')
 parser.add_argument('--checkpoint_dir', dest='checkpoint_dir', default='./checkpoint', help='models are saved here')

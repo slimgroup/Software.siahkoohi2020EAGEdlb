@@ -21,7 +21,7 @@ conda env create -f environment.yml
 source activate devito
 pip install -e .
 export DEVITO_ARCH=gnu
-export OMP_NUM_THREADS=8
+export OMP_NUM_THREADS=16 # or any other number of threads you prefer
 export DEVITO_OPENMP=1
 
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
