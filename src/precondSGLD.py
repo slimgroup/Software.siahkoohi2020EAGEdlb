@@ -26,7 +26,7 @@ class pSGLD(Optimizer):
         for group in self.param_groups:
             group.setdefault('centered', False)
 
-    def step(self, N=1, closure=None):
+    def step(self, closure=None):
         """Performs a single optimization step.
 
         Arguments:
