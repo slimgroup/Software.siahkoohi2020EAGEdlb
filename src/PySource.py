@@ -1,4 +1,9 @@
 
+# Acoustic wave equations with Devito
+# Forward/adjoint nonlinear and Born modeling
+# Authors: Mathias Louboutin, Philipp Witte
+# Date: November 2017
+#
 import sympy
 
 from devito import Dimension
