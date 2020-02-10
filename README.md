@@ -69,7 +69,7 @@ The figures will be saved in `sample/` directory.
 
 ## Citation
 
-If you find this siftware useful in your research, please cite:
+If you find this software useful in your research, please cite:
 
 
 ```bibtex
