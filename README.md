@@ -67,6 +67,17 @@ bash run-test.sh
 
 The figures will be saved in `sample/` directory.
 
+```bibtex
+@unpublished {siahkoohi2020EAGEdlb,
+	title = {A deep-learning based Bayesian approach to seismic imaging and uncertainty quantification},
+	year = {2020},
+	month = {1},
+	author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann}
+	journal={arXiv preprint arXiv:2001.04567},
+	url = {https://arxiv.org/pdf/2001.04567.pdf}
+}
+```
+
 
 ## Questions
 
