@@ -67,6 +67,11 @@ bash run-test.sh
 
 The figures will be saved in `sample/` directory.
 
+## Citation
+
+If you find this siftware useful in your research, please cite:
+
+
 ```bibtex
 @unpublished {siahkoohi2020EAGEdlb,
 	title = {A deep-learning based Bayesian approach to seismic imaging and uncertainty quantification},
