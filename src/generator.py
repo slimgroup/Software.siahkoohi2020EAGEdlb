@@ -1,4 +1,4 @@
-# These scripts is partly obtained from https://github.com/ZezhouCheng/GP-DIP
+# This script is partly obtained from https://github.com/ZezhouCheng/GP-DIP
 
 import torch
 import torch.nn as nn
