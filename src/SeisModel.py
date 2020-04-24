@@ -1,12 +1,10 @@
 # Thanks to Philip Witte for his contributions in this script.
 
 import torch
-import torchvision
 import torch.nn as nn
 from torch.autograd import Function
 from JAcoustic_codegen import forward_modeling, forward_born, adjoint_born
-from devito import Function as DevFunc
-from devito import TimeFunction
+from devito import DevFunc
 import numpy as np
 
 #################################################################################################################################
